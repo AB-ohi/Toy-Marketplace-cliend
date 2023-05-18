@@ -6,6 +6,7 @@ import SingUp from "../Pages/SingUp/SingUp";
 import MyToy from "../Pages/MyToy/MyToy";
 import AllToy from "../Pages/AllToy/AllToy";
 import Blogs from "../Blogs/Blogs";
+import PrivetRoute from "./PrivetRoute";
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/alltoy',
-          element:<AllToy></AllToy>
+          element:<PrivetRoute><AllToy></AllToy></PrivetRoute>
         },
         {
           path:'/blog',
