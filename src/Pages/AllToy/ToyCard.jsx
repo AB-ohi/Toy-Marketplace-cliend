@@ -11,8 +11,10 @@ const ToyCard = ({ allToy }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">New movie is released!</h2>
-        <p>Click the button to watch on Jetflix app.</p>
+        <h2 className="card-title">{toyName}</h2>
+        <p>{subCategory}</p>
+        <p>Price:{ price}$</p>
+        <p>Quantity:{availableQuantity}</p>
         <div className="card-actions justify-end">
           <button className="btn btn-primary">Watch</button>
         </div>

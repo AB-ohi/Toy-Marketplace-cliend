@@ -1,0 +1,27 @@
+.Tabs{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.tabList{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.tabHead{
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid white;
+    cursor:pointer;
+}
+
+.active{
+    background: linear-gradient(10deg,rgba(108,0,143,1) 0%, rgba(62,2,158,1) 100%);
+    color: rgb(240, 240, 240);
+}
+.tabContent{
+    margin: auto;
+}
