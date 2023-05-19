@@ -13,7 +13,8 @@ const SingUp = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    const user = {name, email, password};
+    const photo = form.photo.value;
+    const user = {name, email, password, photo};
     console.log(user)
 
     createUser(email,password)
@@ -68,6 +69,18 @@ const SingUp = () => {
                     type="password"
                     placeholder="Your password"
                     name="password"
+                    className="input input-bordered"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Picture Url</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Photo Url"
+                    name="photo"
                     className="input input-bordered"
                     required
                   />
