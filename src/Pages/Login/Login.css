@@ -1,0 +1,13 @@
+.background-img{
+    background-image: url('https://i.ibb.co/gSM569n/Artboard-1-2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.input-background{
+    background-image: url('https://i.ibb.co/qgyBG7j/Artboard-1-2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

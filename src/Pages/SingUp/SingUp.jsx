@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import loginImg from "../../assets/images/login/login.svg";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import OtherLogin from "../otherLogin/OtherLogin";
+import '../Login/Login.css'
 const SingUp = () => {
 
     const {createUser} = useContext(AuthContext)
@@ -28,14 +28,11 @@ const SingUp = () => {
   }
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen bg-base-200  background-img">
         <div className="hero-content flex-col gap-10 lg:flex-row">
-          <div className="w-1/2 text-center lg:text-left">
-            <img src={loginImg} alt="" />
-          </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
-              <h1 className="text-5xl font-bold">Sing UP!</h1>
+              <h1 className="text-5xl font-bold text-violet-500">Sing UP!</h1>
               <form onSubmit={handelToSingUp}>
                 <div className="form-control">
                   <label className="label">
@@ -63,7 +60,7 @@ const SingUp = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Confirm Password</span>
+                    <span className="label-text">Password</span>
                   </label>
                   <input
                     type="password"
@@ -95,7 +92,7 @@ const SingUp = () => {
               </form>
               <p className="text-center mt-3">Or Sign In with</p>
               <OtherLogin></OtherLogin>
-              <p className="text-center mt-3">Already have an account? <Link to='/login' className="text-orange-600">Login</Link></p>
+              <p className="text-center mt-3">Already have an account? <Link to='/login' className="text-violet-500">Login</Link></p>
             </div>
           </div>
         </div>

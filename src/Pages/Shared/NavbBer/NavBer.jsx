@@ -38,26 +38,26 @@ const NavBer = () => {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li tabIndex={0}>
+                <li>
+                  <Link to="/blog">Blogs</Link>
+                </li>
+              <li>
                 <Link to="/alltoy"> All Toys</Link>
-              </li>
-              <li>
-                <Link to="/mytoy">My Toys</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blogs</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
               </li>
               {user?.email ? (
                 <>
                   <li>
-                    <Link to="/bookings">My Bookings</Link>
+                    <Link to="/mytoy">My Toys</Link>
+                  </li>
+                  <li>
+                    <Link to="/addToy"> Add Toy</Link>
                   </li>
                   <li>
                     <button onClick={handleLogout}>Sing Out</button>
                   </li>
+                  <div className="w-10 rounded-full">
+                    <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
                 </>
               ) : (
                 <li>
@@ -68,7 +68,11 @@ const NavBer = () => {
           </ul>
         </div>
         <Link className="flex items-center gap-5" to="/">
-          <img className="w-[50px]" src="https://i.ibb.co/b6835nB/peakpx.png" alt="" />
+          <img
+            className="w-[50px]"
+            src="https://i.ibb.co/b6835nB/peakpx.png"
+            alt=""
+          />
           <h1>Avengers Playsets</h1>
         </Link>
       </div>
@@ -82,13 +86,16 @@ const NavBer = () => {
             <li>
               <Link to="/blog">Blogs</Link>
             </li>
+            <li>
+              <Link to="/alltoy"> All Toys</Link>
+            </li>
             {user?.email ? (
               <>
-                <li tabIndex={0}>
-                  <Link to="/alltoy"> All Toys</Link>
-                </li>
                 <li>
                   <Link to="/mytoy">My Toys</Link>
+                </li>
+                <li>
+                  <Link to="/addToy"> Add Toy</Link>
                 </li>
                 <li>
                   <button onClick={handleLogout}>Sing Out</button>
