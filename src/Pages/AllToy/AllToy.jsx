@@ -13,7 +13,7 @@ const AllToy = () => {
     },[])
 
     return (
-        <div className="All-toy-background rounded-lg">
+        <div className=" rounded-lg">
             {
                AllToys.map(allToy =><ToyCard
                key={allToy._id}
