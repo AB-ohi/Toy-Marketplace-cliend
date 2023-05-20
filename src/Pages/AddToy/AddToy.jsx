@@ -40,7 +40,7 @@ const AddToy = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen addToys-background">
+      <div className="hero min-h-screen addToys-background rounded-xl my-5">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full shadow-2xl addToys-form-bg">
             <div className="card-body">
