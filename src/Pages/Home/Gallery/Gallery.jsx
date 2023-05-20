@@ -12,7 +12,7 @@ const Gallery = () => {
     setModel(true);
   };
   useEffect(() => {
-    fetch("http://localhost:5000/toys")
+    fetch("https://toy-marketplace-server-chi.vercel.app/toys")
       .then(res => res.json())
       .then(data => setToys(data));
   }, []);

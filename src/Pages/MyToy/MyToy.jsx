@@ -4,7 +4,7 @@ import MyToyCard from "./MyToyCard";
 const MyToy = () => {
     const [myToys, setMyToys] = useState([]);
 
-    fetch('http://localhost:5000/addToy')
+    fetch('https://toy-marketplace-server-chi.vercel.app/addToy')
     .then(res => res.json())
     .then(data => setMyToys(data))
     return (
