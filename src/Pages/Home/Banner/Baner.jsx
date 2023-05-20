@@ -18,7 +18,7 @@ const Banner = () => {
             </div>
             </div>
           </div>
-          <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 gap-x-5">
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0 gap-x-5">
             <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
@@ -32,7 +32,7 @@ const Banner = () => {
             src="https://i.ibb.co/vwJgKZQ/avengers-endgame-avengers-infinity-war-thanos-marvel-10580x3000-1479.jpg"
             
           />
-          <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 gap-x-5">
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0 gap-x-5">
             <a href="#slide1" className="btn btn-circle">
               ❮
             </a>
@@ -46,7 +46,7 @@ const Banner = () => {
             src="https://i.ibb.co/spT8Byn/iron-man-minimal-art-polygonal-marvel-superheroes-dark-3840x2160-3482.jpg"
             className="w-full"
           />
-          <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 gap-x-5">
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0 gap-x-5">
             <a href="#slide2" className="btn btn-circle">
               ❮
             </a>
