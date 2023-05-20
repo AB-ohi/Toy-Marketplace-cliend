@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import "./Toys.css";
+import AOS from 'aos'
 const Gallery = () => {
   const [toys, setToys] = useState([]);
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
+
 
   const getImg = (ImageUrl) => {
     setTempImgSrc(ImageUrl);
@@ -14,6 +16,9 @@ const Gallery = () => {
       .then(res => res.json())
       .then(data => setToys(data));
   }, []);
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  },[])
   return (
     <div>
       <h1 className="gallery-heder">Toy gallery</h1>
@@ -21,7 +26,7 @@ const Gallery = () => {
         <img src={tempImgSrc}></img>
         <h1 onClick={() => setModel(false)}>X</h1>
       </div>
-      <div className="gallery">
+      <div className="gallery" data-aos="fade-right">
         {toys.map(toy => (
           <img
             key={toy._id}
