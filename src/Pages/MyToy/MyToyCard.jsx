@@ -13,7 +13,7 @@ const MyToyCard = ({ myToy }) => {
         <p>Price: {price}$</p>
         <p>quantity: {quantity}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Learn now!</button>
+          <button className="btn btn-primary">Delete</button>
         </div>
       </div>
     </div>
