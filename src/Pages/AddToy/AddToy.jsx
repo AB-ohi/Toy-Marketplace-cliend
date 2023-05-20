@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2'
+import './AddToy.css'
 
 const AddToy = () => {
 
@@ -39,9 +40,9 @@ const AddToy = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen addToys-background">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 w-full shadow-2xl addToys-form-bg">
             <div className="card-body">
               <h1 className="text-center font-semibold text-5xl">Add Toy</h1>
               <form onSubmit={handelAddToy}>
@@ -55,7 +56,7 @@ const AddToy = () => {
                       type="text"
                       placeholder="Toy Name"
                       name="name"
-                      className="input input-bordered"
+                      className="input import-bg"
                     />
                   </div>
                   <div className="form-control">
@@ -67,7 +68,7 @@ const AddToy = () => {
                       type="text"
                       placeholder="Seller Name"
                       name="sellerName"
-                      className="input input-bordered"
+                      className="input import-bg"
                     />
                   </div>
                 </div>
@@ -81,7 +82,7 @@ const AddToy = () => {
                       type="text"
                       placeholder="Email"
                       name="email"
-                      className="input input-bordered"
+                      className="input import-bg"
                     />
                   </div>
                   <div className="form-control">
@@ -93,7 +94,7 @@ const AddToy = () => {
                       type="text"
                       placeholder="Sub-category"
                       name="SubCategory"
-                      className="input input-bordered"
+                      className="input import-bg"
                     />
                   </div>
                 </div>
@@ -107,7 +108,7 @@ const AddToy = () => {
                       type="text"
                       placeholder="Price"
                       name="price"
-                      className="input input-bordered"
+                      className="input import-bg"
                     />
                   </div>
                   <div className="form-control">
@@ -119,7 +120,7 @@ const AddToy = () => {
                       type="text"
                       placeholder="Quantity"
                       name="quantity"
-                      className="input input-bordered"
+                      className="input import-bg"
                     />
                   </div>
                 </div>
@@ -132,7 +133,7 @@ const AddToy = () => {
                     type="text"
                     placeholder="URL"
                     name="picture"
-                    className="input input-bordered"
+                    className="input import-bg"
                   />
                 </div>
                 <div className="form-control mt-6">

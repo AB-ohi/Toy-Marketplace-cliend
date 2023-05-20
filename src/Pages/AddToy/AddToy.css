@@ -1,0 +1,16 @@
+.addToys-background{
+    background-image: url('https://i.ibb.co/kJn0j09/Mesa-de-trabajo-2-2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.addToys-form-bg{
+    background-image: url('https://i.ibb.co/QpxN34c/Mesa-de-trabajo-2-2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.import-bg{
+    background-color: rgba(2, 40, 97, 0.644);
+    color: rgb(255, 255, 255);
+}

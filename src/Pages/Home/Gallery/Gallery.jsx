@@ -14,8 +14,6 @@ const Gallery = () => {
       .then(res => res.json())
       .then(data => setToys(data));
   }, []);
-
-  console.log(toys);
   return (
     <div>
       <h1 className="gallery-heder">Toy gallery</h1>

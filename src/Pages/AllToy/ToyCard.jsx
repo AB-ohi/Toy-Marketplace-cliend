@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ToyCard = ({ allToy }) => {
   const {toyName, subCategory, price, availableQuantity, no, Seller} = allToy;
 
@@ -23,7 +25,7 @@ const ToyCard = ({ allToy }) => {
         <td>{subCategory}</td> 
         <td>{price}$</td> 
         <td>{availableQuantity}</td> 
-        <button className="btn btn-outline btn-success">View Detail</button>
+        <Link to='/detail'><button className="btn btn-outline btn-success">View Detail</button></Link>
       </tr>
     </tbody> 
   </table>
