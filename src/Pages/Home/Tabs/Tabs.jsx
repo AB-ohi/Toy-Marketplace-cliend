@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Tabs.css";
+import { Link } from "react-router-dom";
 
 const Tabs = () => {
   const [tabs, setTabs] = useState(0);
@@ -29,46 +30,95 @@ const Tabs = () => {
         </div>
       </div>
       <div className="tabContent md:m-[50%]" hidden={tabs != 0}>
+        <div className="grid md:grid-cols-2">
         <div className="card md:w-2/3 bg-base-100 shadow-xl m-auto">
           <div className="card-body">
-            <h2 className="card-title">Spider Man</h2>
-            <p>Spider-Man is a superhero appearing in American comic books published by Marvel Comics</p>
+            <h2 className="card-title">Lady Spider</h2>
+            <p>Price:120$</p>
+            <Link to="/detail"><button className="btn btn-outline btn-info">View Details</button></Link>
           </div>
           <figure>
             <img
             className="w-full"
-              src="https://i.ibb.co/pnm0q6b/images.jpg"
+              src="https://i.ibb.co/BTVQDZF/DSC01092-1024x1024.webp"
               alt=""
             />
           </figure>
         </div>
-      </div>
-      <div className="tabContent" hidden={tabs != 1}>
         <div className="card md:w-2/3 bg-base-100 shadow-xl m-auto">
           <div className="card-body">
-            <h2 className="card-title">Iron Man</h2>
-            <p>Someone who is performs a very complex, complicated, or strenuous task without assistance</p>
+            <h2 className="card-title">Spider Man</h2>
+            <p>Price:200$</p>
+            <Link to="/detail"><button className="btn btn-outline btn-info">View Details</button></Link>
           </div>
           <figure>
             <img
-              src="https://i.ibb.co/MkSL69p/SH-Figuarts-Hulkbuster-001.jpg"
+            className="w-full"
+              src="https://i.ibb.co/tZFhgmx/DSC3990-1024x1024.webp"
+              alt=""
+            />
+          </figure>
+        </div>
+        </div>
+      </div>
+      <div className="tabContent  md:m-[50%]" hidden={tabs != 1}>
+        <div className="grid md:grid-cols-2">
+        <div className="card md:w-2/3 bg-base-100 shadow-xl m-auto">
+          <div className="card-body">
+            <h2 className="card-title">Iron Man</h2>
+            <p>Price:500$</p>
+            <Link to="/detail"><button className="btn btn-outline btn-info">View Details</button></Link>
+          </div>
+          <figure>
+            <img
+              src="https://i.ibb.co/XkPcynL/DSF0119-1024x1024-2x.webp"
               alt="Shoes"
             />
           </figure>
         </div>
-      </div>
-      <div className="tabContent" hidden={tabs != 2}>
         <div className="card md:w-2/3 bg-base-100 shadow-xl m-auto">
           <div className="card-body">
-            <h2 className="card-title">avengers</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title">Iron Man</h2>
+            <p>Price:455$</p>
+            <Link to="/detail"><button className="btn btn-outline btn-info">View Details</button></Link>
           </div>
           <figure>
             <img
-              src="https://i.ibb.co/ByCM5vP/Avengers-Age-of-Ultron-Joss-Whedon.webp"
+              src="https://i.ibb.co/M1WxJfQ/fullsizeoutput-7aa-1024x1024.webp"
               alt="Shoes"
             />
           </figure>
+        </div>
+        </div>
+      </div>
+      <div className="tabContent" hidden={tabs != 2}>
+        <div className="grid md:grid-cols-2">
+        <div className="card md:w-2/3 bg-base-100 shadow-xl m-auto">
+          <div className="card-body">
+            <h2 className="card-title">Captain America</h2>
+            <p>Price: 50$</p>
+            <Link to="/detail"><button className="btn btn-outline btn-info">View Details</button></Link>
+          </div>
+          <figure>
+            <img
+              src="https://i.ibb.co/FXqwqr2/fullsizeoutput-1c3-1024x1024-2x.webp"
+              alt="Shoes"
+            />
+          </figure>
+        </div>
+        <div className="card md:w-2/3 bg-base-100 shadow-xl m-auto">
+          <div className="card-body">
+            <h2 className="card-title">Captain America</h2>
+            <p>Price: 40$</p>
+            <Link to="/detail"><button className="btn btn-outline btn-info">View Details</button></Link>
+          </div>
+          <figure>
+            <img
+              src="https://i.ibb.co/KypcT9Q/fullsizeoutput-1bd-1024x1024-2x.webp"
+              alt="Shoes"
+            />
+          </figure>
+        </div>
         </div>
       </div>
     </div>

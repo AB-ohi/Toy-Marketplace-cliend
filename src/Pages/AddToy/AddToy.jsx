@@ -14,7 +14,8 @@ const AddToy = () => {
         const price = form.price.value;
         const quantity = form.quantity.value;
         const picture = form.picture.value;
-        const newToy = {name, sellerName, email, SubCategory, price, quantity, picture }
+        const description = form.description.value;
+        const newToy = {name, sellerName, email, SubCategory, price, quantity, picture, description }
         console.log(newToy)
 
         fetch('https://toy-marketplace-server-chi.vercel.app/addToy',{
@@ -43,13 +44,13 @@ const AddToy = () => {
       <div className="hero min-h-screen addToys-background rounded-xl my-5">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full shadow-2xl addToys-form-bg">
-            <div className="card-body">
+            <div className="card-body text-blue-500">
               <h1 className="text-center font-semibold text-5xl">Add Toy</h1>
               <form onSubmit={handelAddToy}>
-                <div className="md:flex gap-6">
+                <div className="md:flex gap-6 ">
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Name</span>
+                      <span className="label-text text-white">Name</span>
                     </label>
                     <input
                         required
@@ -61,7 +62,7 @@ const AddToy = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">seller name</span>
+                      <span className="label-text text-white">seller name</span>
                     </label>
                     <input
                         required
@@ -75,7 +76,7 @@ const AddToy = () => {
                 <div className="md:flex gap-6">
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Seller Email</span>
+                      <span className="label-text text-white">Seller Email</span>
                     </label>
                     <input
                         required
@@ -87,7 +88,7 @@ const AddToy = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Sub-category</span>
+                      <span className="label-text text-white">Sub-category</span>
                     </label>
                     <input
                         required
@@ -101,7 +102,7 @@ const AddToy = () => {
                 <div className="md:flex gap-6">
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Price</span>
+                      <span className="label-text text-white">Price</span>
                     </label>
                     <input
                         required
@@ -113,7 +114,7 @@ const AddToy = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Available quantity</span>
+                      <span className="label-text text-white">Available quantity</span>
                     </label>
                     <input
                         required
@@ -126,7 +127,7 @@ const AddToy = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Picture URL</span>
+                    <span className="label-text text-white">Picture URL</span>
                   </label>
                   <input
                     required
@@ -136,8 +137,20 @@ const AddToy = () => {
                     className="input import-bg"
                   />
                 </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-white">Detail description</span>
+                  </label>
+                  <textarea
+                    required
+                    type="text"
+                    placeholder="Detail description"
+                    name="description"
+                    className="input import-bg"
+                  />
+                </div>
                 <div className="form-control mt-6">
-                  <input className="btn btn-primary" type="submit" value="submit" />
+                  <input className="btn btn-info" type="submit" value="submit" />
                 </div>
               </form>
             </div>
