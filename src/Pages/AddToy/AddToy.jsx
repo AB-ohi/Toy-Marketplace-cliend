@@ -18,7 +18,7 @@ const AddToy = () => {
         const newToy = {name, sellerName, email, SubCategory, price, quantity, picture, description }
         console.log(newToy)
 
-        fetch('https://toy-marketplace-server-chi.vercel.app/addToy',{
+        fetch('https://toy-marketplace-server-chi.vercel.app/addtoy',{
             method: 'POST',
             headers:{
                 'content-type':'application/json'
