@@ -22,13 +22,17 @@ const AllToy = () => {
           <th>subCategory</th>
           <th>price</th>
           <th>Quantity</th>
+          <th></th>
         </thead>
+        
+      <tbody>
       {
          AllToys.map(allToy =><ToyCard
          key={allToy._id}
          allToy={allToy}
          ></ToyCard>) 
       }
+      </tbody>
       </table>
     </div>
     );

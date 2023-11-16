@@ -8,7 +8,6 @@ import AllToy from "../Pages/AllToy/AllToy";
 import Blogs from "../Blogs/Blogs";
 import PrivetRoute from "./PrivetRoute";
 import AddToy from "../Pages/AddToy/AddToy";
-import Error from "../Error/Error";
 import Detail from "../Pages/AllToy/Detail";
 
 
@@ -49,10 +48,7 @@ const router = createBrowserRouter([
           path:'/addToy',
           element:<PrivetRoute><AddToy></AddToy></PrivetRoute>
         },
-        {
-          path:'/*',
-          element:<Error></Error>
-        }
+      
         
       ]
   

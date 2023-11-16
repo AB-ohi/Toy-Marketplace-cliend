@@ -4,10 +4,7 @@ const ToyCard = ({ allToy }) => {
   const { toyName, subCategory, price, availableQuantity, Seller } = allToy;
 
   return (
-    <div>
-      <tbody>
       <tr>
-           <div className=" rounded-lg">
             <td>{toyName}</td>
             <td>{Seller}</td>
             <td>{subCategory}</td>
@@ -18,10 +15,7 @@ const ToyCard = ({ allToy }) => {
                 View Detail
               </button>
             </Link></td>
-         </div>
           </tr>
-      </tbody>
-    </div>
   );
 };
 
